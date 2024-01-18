@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: NunitoBold;
+    src: url("../fonts/NunitoBold.ttf");
+}
+
+body {
+    font-family: NunitoBold, sans-serif;
+    background: linear-gradient(to right, #fffffb 50%, #f8f8fa 50%);
+}
+
+.logo {
+    text-align: center;
+    margin-top: 27px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 112px auto 191px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 96px;
+}
+
+.reg-form {
+    max-width: 496px;
+}
+
+.reg-form-title {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.reg-form-text {
+    font-size: 22px;
+    line-height: 27px;
+    color: #636363;
+    margin-bottom: 62px;
+}
+
+.reg-form-label {
+    display: block;
+    font-size: 16px;
+    color: #C6C6C4;
+    margin: 20px 0 5px 0;
+}
+
+.reg-input {
+    width: 452px;
+    background-color: #fffffb;
+    border: 0;
+    border-bottom: 1px solid #C6C6C4;
+    font-size: 20px;
+    color: #323232;
+    padding-bottom: 3px;
+    outline: none;
+    font-family: NunitoBold, sans-serif;
+}
+
+.input-wrapper.hasError .reg-input {
+    border-color: red;
+}
+
+.input-wrapper.hasError .show-error {
+    display: block;
+}
+
+#login-link {
+    text-align: center;
+}
+
+.show-error {
+    margin-top: 10px;
+    color: red;
+    text-align: center;
+    display: none;
+}
+
+.input-check {
+    margin: 30px 0 0 0;
+    user-select: none;
+}
+
+.label {
+    font-size: 16px;
+    color: #636363;
+    margin-left: 10px;
+}
+
+.button-sign-up {
+    text-align: center;
+    margin: 40px 0 44px 0;
+}
+
+.button {
+    width: 210px;
+    height: 70px;
+    border-radius: 40px;
+    background: #DD3142;
+    border: 0;
+    font-size: 20px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.link {
+    text-decoration: none;
+    color: #636363;
+    max-width: 190px;
+    margin: 0 auto;
+    cursor: pointer;
+    display: block;
+}
+
+.main-image {
+    padding-top: 55px;
+}
+
+.popup-container {
+    display: none;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.85);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+}
+
+.popup {
+    position: fixed;
+    background: #eae8e8;
+    border: 0;
+    padding: 25px;
+    border-radius: 15px;
+    top: calc(50% - 91px);
+    left: calc(50% - 248px);
+    text-align: center;
+}
+
+.popup-text {
+    font-size: 18px;
+}
+
+.popup-button {
+    margin-top: 30px;
+    font-family: NunitoBold, sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 15px 40px;
+    border-radius: 5px;
+    color: white;
+    background: #DD3142;
+    border: 0;
+    cursor: pointer;
+}
+
+
+

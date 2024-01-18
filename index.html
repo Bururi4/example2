@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+<div class="logo" id="logo">
+    <img src="images/logo.svg" alt="Logo" id="logo-image">
+</div>
+<div class="container" id="container">
+    <div class="reg-form" id="personal-form">
+        <div class="reg-form-title" id="personal-form-title">
+            Welcome, name!
+        </div>
+        <div class="button-sign-up" id="personal-button">
+            <button class="button" type="button" id="personal-area-button">Exit</button>
+        </div>
+    </div>
+    <div class="reg-form" id="login-form">
+        <div class="reg-form-title" id="login-form-title">
+            Log in to the system
+        </div>
+        <div class="reg-form-text" id="login-form-text">
+            Try homeWorks BUSINESS free for 15 days. Downgrade to Basic (Free Forever) anytime.
+        </div>
+        <div class="input-wrapper">
+            <label for="login-username" class="reg-form-label">Your Username</label>
+            <input type="text" class="reg-input" id="login-username">
+            <div class="show-error" id="login-username-error">Такой пользователь не зарегистрирован</div>
+        </div>
+        <div class="input-wrapper">
+            <label for="login-password" class="reg-form-label">Password</label>
+            <input type="password" class="reg-input" id="login-password">
+            <div class="show-error" id="login-password-error">Неверный пароль</div>
+        </div>
+        <div class="button-sign-up" id="login-button-sign-up">
+            <button class="button" type="button" id="login-button">Sign In</button>
+        </div>
+        <a class="link" id="login-link">Registration</a>
+    </div>
+    <div class="reg-form" id="reg-form">
+        <div class="reg-form-title" id="reg-form-title">
+            Get your free account
+        </div>
+        <div class="reg-form-text" id="reg-form-text">
+            Try homeWorks BUSINESS free for 15 days. Downgrade to Basic (Free Forever) anytime.
+        </div>
+        <div class="input-wrapper">
+            <label for="full-name" class="reg-form-label" id="full-name-text">Full Name</label>
+            <input type="text" class="reg-input" id="full-name">
+            <div class="show-error" id="name-error">Поле Full Name может содержать только буквы и пробел</div>
+        </div>
+        <div class="input-wrapper">
+            <label for="username" class="reg-form-label">Your Username</label>
+            <input type="text" class="reg-input" id="username">
+            <div class="show-error" id="username-error">Username может содержать только буквы, цифры, символ
+                подчеркивания и тире
+            </div>
+        </div>
+        <div class="input-wrapper">
+            <label for="email" class="reg-form-label" id="email-text">E-mail</label>
+            <input type="email" class="reg-input" id="email">
+            <div class="show-error" id="email-error">Пожалуйста, введите корректный E-mail адрес</div>
+        </div>
+        <div class="input-wrapper">
+            <label for="password" class="reg-form-label">Password</label>
+            <input type="password" class="reg-input" id="password">
+            <div class="show-error" id="password-error">Пароль должен состоять минимум из 8 символов, среди которых есть
+                хотя бы одна заглавная буква, хотя бы одна цифра и хотя бы один спецсимвол
+            </div>
+        </div>
+        <div class="input-wrapper">
+            <label for="repeat-password" class="reg-form-label" id="repeat-text">Repeat Password</label>
+            <input type="password" class="reg-input" id="repeat-password">
+            <div class="show-error" id="repeat-password-error">Пароли не совпадают</div>
+        </div>
+        <div class="input-check input-wrapper" id="input-check">
+            <input type="checkbox" id="agree" class="checkbox">
+            <label for="agree" class="label">Agree to our Terms of Service and Privacy Statement</label>
+            <div class="show-error" id="agree-error">Согласитесь с нашими условиями</div>
+        </div>
+        <div class="button-sign-up" id="button-sign-up">
+            <button class="button" type="button" id="button">Sign Up</button>
+        </div>
+        <a class="link" id="link">Already have an account?</a>
+    </div>
+    <div class="main-image" id="main-image">
+        <img src="images/main.svg" alt="Main_Image" id="main-image-img">
+    </div>
+</div>
+<div class="popup-container">
+    <div class="popup" id="popup">
+        <div class="popup-text" id="popup-text">
+            На вашу почту отправлена ссылка.
+            <br>
+            Перейдите по ней, чтобы завершить регистрацию.
+        </div>
+        <button class="popup-button" id="popup-button">ок</button>
+    </div>
+</div>
+<script src="scripts/script.js"></script>
+</body>
+</html>
